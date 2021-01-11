@@ -46,6 +46,18 @@ body{
     background-color: chocolate;
 }
 
+.change .line-1{
+    transform: rotateZ(-45deg) translate(-8px, 6px);
+}
+
+.change .line-2{
+    opacity: 0;
+}
+
+.change .line-3{
+    transform: rotateZ(45deg) translate(-8px, -6px);
+}
+
 .nav-list{
     text-align: right;
 }
@@ -74,4 +86,21 @@ body{
     background: chocolate;
     position: absolute;
     left: 0;
+    transform: scaleX(0);
+    transition: transform 0.5s;
+}
+
+.nav-link::after{
+    bottom: 0;
+    transform-origin: right;
+}
+
+.nav-link::before{
+    top: 0;
+    transform-origin: left;
+}
+
+.nav-link:hover::before,
+.nav-link:hover::after{
+    transform: scaleX(1);
 }

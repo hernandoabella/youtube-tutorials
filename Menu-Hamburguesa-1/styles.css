@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -12,14 +13,13 @@ body{
 .container{
     width: 100%;
     height: 100vh;
-    background: #B10F2E;
-    background-size: cover;
+    background: #b10f2e;
 }
 
 .navbar{
     width: 300px;
     height: 100%;
-    background-color: #FDFFFF;
+    background-color: #fdffff;
     position: fixed;
     top: 0;
     right: -300px;
@@ -49,13 +49,13 @@ body{
 .line{
     width: 100%;
     height: 3px;
-    background-color: #fff;
+    background: #fff;
     transition: all 0.8s;
 }
 
 .change .line-1{
     transform: rotateZ(-405deg) translate(-8px, 6px);
-    background: #B10F2E;
+    background: #b10f2e;
 }
 
 .change .line-2{
@@ -64,7 +64,7 @@ body{
 
 .change .line-3{
     transform: rotateZ(405deg) translate(-8px, -6px);
-    background: #B10F2E;
+    background: #b10f2e;
 }
 
 .nav-list{
@@ -80,15 +80,15 @@ body{
     text-decoration: none;
     font-size: 22px;
     color: #000;
-    font-weight: 300;
     letter-spacing: 1px;
-    text-transform: uppercase;  
+    font-weight: 300;
+    text-transform: uppercase;
     position: relative;
     padding: 3px 0;
 }
 
 .nav-link:hover{
-    color: #B10F2E;
+    color: #b10f2e;
 }
 
 .nav-link::before,
@@ -96,7 +96,7 @@ body{
     content: "";
     width: 100%;
     height: 2px;
-    background: #B10F2E;
+    background: #b10f2e;
     position: absolute;
     left: 0;
     transform: scaleX(0);
@@ -105,11 +105,6 @@ body{
 
 .nav-link::after{
     bottom: 0;
-    transform-origin: right;
-}
-
-.nav-link::before{
-    top: 0;
     transform-origin: left;
 }
 

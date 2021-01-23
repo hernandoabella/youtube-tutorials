@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
 }
 
-.tarjeta {
+.contenedor__imagen {
   background-color: rgb(41, 46, 57);
   color: #fff;
   display: inline-block;
@@ -22,15 +22,15 @@
   width: 100%;
 }
 
-.tarjeta * {
+.contenedor__imagen * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
 
-.tarjeta:before,
-.tarjeta:after {
+.contenedor__imagen:before,
+.contenedor__imagen:after {
   background-color: rgba(46, 52, 64,  0.5);
   border-top: 50px solid rgba(46, 52, 64, 0.5);
   border-bottom: 50px solid rgba(46, 52, 64, 0.5);
@@ -46,23 +46,23 @@
   opacity: 0;
 }
 
-.tarjeta:before {
+.contenedor__imagencontenedor__imagen:before {
   -webkit-transform: scaleY(2);
   transform: scaleY(2);
 }
 
-.tarjeta:after {
+.contenedor__imagencontenedor__imagen:after {
   -webkit-transform: scaleY(2);
   transform: scaleY(2);
 }
 
-.tarjeta img {
+.contenedor__imagencontenedor__imagen img {
   vertical-align: top;
   max-width: 100%;
   backface-visibility: hidden;
 }
 
-.tarjeta figcaption {
+.contenedor__imagen figcaption {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -80,7 +80,7 @@
   transition-delay: 0s;
 }
 
-.tarjeta h3 {
+.contenedor__imagen h3 {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -88,12 +88,12 @@
   text-transform: uppercase;
 }
 
-.tarjeta h3 span {
+.contenedor__imagen h3 span {
   display: block;
   font-weight: 700;
 }
 
-.tarjeta a {
+.contenedor__imagen a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -102,22 +102,22 @@
   z-index: 3;
 }
 
-.tarjeta:hover > img,
-.tarjeta.hover > img {
+.contenedor__imagen:hover > img,
+.contenedor__imagen.hover > img {
   opacity: 0.7;
 }
 
-.tarjeta:hover:before,
-.tarjeta.hover:before,
-.tarjeta:hover:after,
-.tarjeta.hover:after {
+.contenedor__imagen:hover:before,
+.contenedor__imagen.hover:before,
+.contenedor__imagen:hover:after,
+.contenedor__imagen.hover:after {
   -webkit-transform: scale(1);
   transform: scale(1);
   opacity: 1;
 }
 
-.tarjeta:hover figcaption,
-.tarjeta.hover figcaption {
+.contenedor__imagen:hover figcaption,
+.contenedor__imagen.hover figcaption {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
